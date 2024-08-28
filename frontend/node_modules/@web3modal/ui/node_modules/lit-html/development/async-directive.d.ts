@@ -116,9 +116,9 @@
  * re-connect the tree, which does the same operation, simply passing
  * `isConnected: true` down the tree, signaling which callback to run.
  */
-import { Disconnectable, Part } from './lit-html.js';
-import { Directive } from './directive.js';
-export * from './directive.js';
+import { Disconnectable, Part } from '../src/lit-html.js';
+import { Directive } from '../src/directive.js';
+export * from '../src/directive.js';
 /**
  * An abstract `Directive` base class whose `disconnected` method will be
  * called when the part containing the directive is cleared as a result of

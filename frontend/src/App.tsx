@@ -3,15 +3,15 @@ import React, { useEffect, useState } from "react";
 import { waitForTransactionReceipt, writeContract } from "@wagmi/core";
 import { abi } from "./ABI.json";
 import { Spin, SpinGameInitArgs } from "spin";
-import { config } from "./web3";
+import { config } from "./web3.tsx";
 import { readContract } from "wagmi/actions";
 import { TaskStatus } from "zkwasm-service-helper";
 
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from "../src/Components/Home.tsx"
-import PlayerVsPlayer from "../src/Components/PvP.tsx"
-import PlayerVsCPU from "../src/Components/PlayerVsCPU.tsx"
+import Home from "./Components/Home.tsx"
+import PlayerVsPlayer from "./Components/PvP.tsx"
+import PlayerVsCPU from "./Components/PlayerVsCPU.tsx"
 
 const GAME_CONTRACT_ADDRESS = import.meta.env.VITE_GAME_CONTRACT_ADDRESS;
 const ZK_USER_ADDRESS = import.meta.env.VITE_ZK_CLOUD_USER_ADDRESS;
